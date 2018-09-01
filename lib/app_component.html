@@ -1,0 +1,23 @@
+<div class="persistent">
+  <header class="material-header header">
+    <div class="material-header-row">
+      <nav class="material-navigation" *ngFor="let link of links">
+        <a (click)="setPage(link.page)">{{link.text}}</a>
+      </nav>
+    </div>
+  </header>
+</div>
+<div class="main" *ngIf="page == 'main'">
+  <div class="code-wrapper">
+    <material-input floatingLabel label="Code" [(ngModel)]="currentCode" name="code"></material-input>
+    <material-button (trigger)="checkCode()">Check</material-button>
+  </div>
+</div>
+<page-library *ngIf="page == 'library'"></page-library>
+<page-chess *ngIf="page == 'chess'"></page-chess>
+<page-dewey *ngIf="page == 'dewey'"></page-dewey>
+<page-message [message]="1" *ngIf="page == 'message1'"></page-message>
+<page-message [message]="2" *ngIf="page == 'message2'"></page-message>
+<page-message [message]="3" *ngIf="page == 'message3'"></page-message>
+<page-message light *ngIf="page == 'light'"></page-message>
+<page-theater *ngIf="page == 'theater'"></page-theater>

@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  height: 100%;
+  background-color: black;
+}
+
+.screen {
+  margin: auto;
+  border: 10px solid white;
+  background: white;
+}

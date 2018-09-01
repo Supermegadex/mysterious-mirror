@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: center;
+  height: 100%;
+  background: url(assets/desk.jpg);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  border-radius: 2px;
+}
+
+.instructions-b {
+  background: black;
+  color: white;
+}
+
+.instructions-w {
+  background: white;
+  color: black;
+}
+
+.instructions-b, .instructions-w {
+  font-family: monospace;
+  font-size: 2em;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}

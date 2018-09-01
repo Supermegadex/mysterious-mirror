@@ -1,0 +1,47 @@
+.wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.wrapper.dark {
+  background-color: black;
+}
+
+.wrapper.light {
+  background-color: white;
+}
+
+.paper {
+  width: calc(100% - 60px);
+  background-color: #f1e4d3;
+  max-width: 600px;
+  padding: 20px;
+  font-size: 1.75em;
+  border-radius: 2px;
+  margin: auto;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.dark .message { 
+  color: #f1e4d3;
+  user-select: none;
+}
+
+.light .message {
+  color: black;
+}
+
+.message.m1 .s1 {
+  color: black;
+  user-select: text;
+}
+
+.message.m2 .s2 {
+  color: black;
+  user-select: text;
+}
+
+.message.m3 .s3 {
+  color: black;
+  user-select: text;
+}
